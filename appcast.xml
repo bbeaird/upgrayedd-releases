@@ -4,23 +4,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Upgrayedd</title>
         <item>
-            <title>0.2.1</title>
-            <pubDate>Wed, 02 Sep 2026 18:40:26 -0700</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <title>0.2.2</title>
+            <pubDate>Thu, 03 Sep 2026 01:23:54 -0700</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Upgrayedd 0.2.1 (3)
+            <description sparkle:format="markdown"><![CDATA[# Upgrayedd 0.2.2 (4)
 
-This bridge release adds secure signed application updates, an explicit manual update command, and an opt-out daily check disclosed on first launch. It sends no Upgrayedd telemetry or hardware profile, and it always asks before downloading, installing, or restarting.
+This release fixes a macOS SwiftUI layout loop that could leave the visible dashboard consuming a full CPU core. The dashboard now uses a predictable non-lazy layout and remains responsive with existing long-running telemetry histories.
 
-The background collector now runs from the signed application bundle so its embedded Sparkle framework remains available after installation and future updates.
+It also includes the corrected background collector path from 0.2.1: the LaunchAgent runs the signed executable inside the installed application bundle so Sparkle remains available.
 
-Requires macOS 14 or later. Install Upgrayedd.app in the approved Applications folder.
+Upgrayedd keeps telemetry on this Mac. Update checks send no Upgrayedd telemetry or hardware profile; the feed host receives ordinary HTTP metadata. Downloads, installation, and restarts always require confirmation.
+
+Requires macOS 14 or later. Universal binary for Apple silicon and Intel Macs.
+
+SHA-256: `56987be1d66c375f1605cd882732c3cf93ffecaff487da3fdbc2f8e8d69063c9`
 ]]></description>
-            <enclosure url="https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.1/Upgrayedd-0.2.1-3.dmg" length="5795865" type="application/octet-stream" sparkle:edSignature="tHmTNn8St1yQir8/1BUSEy/r7R+ZljMsJv6ZaJJMKaqhz/0ycc3UY4vPvFrPml0i+kqZaKMlziIgwzOkRU0tAw=="></enclosure>
+            <enclosure url="https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.2/Upgrayedd-0.2.2-4.dmg" length="5798589" type="application/octet-stream" sparkle:edSignature="TWibzpLw2AIlI8gmLK9pEISzs4vZqiEybsaoSIymDWQF6Mkz2pQGyW6sAufhxiFrEmj0C0rhg/5+wcIPgb4xAg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: ok++AvcamoZqkYoXQIGseXCPb4vzvZy9d8QL4SRtnoyufVsNlk87DBawLrX0wfB0CbHoIIVULBGUnctAgEHrAQ==
-length: 1672
+edSignature: KsCRH5HfF6lcP/ZpDOODCW/TEfpneFr3mGIIFFGdWPq0RrKaOW7331mxc5RbQBCgkkYDtscGEKpXgUAzWDgRBQ==
+length: 1949
 -->
