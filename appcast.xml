@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Upgrayedd</title>
+        <item>
+            <title>0.2.0</title>
+            <pubDate>Wed, 02 Sep 2026 18:30:30 -0700</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Upgrayedd 0.2.0 (2)
+
+This bridge release adds secure signed application updates, an explicit manual update command, and an opt-out daily check disclosed on first launch. It sends no Upgrayedd telemetry or hardware profile, and it always asks before downloading, installing, or restarting.
+
+Requires macOS 14 or later. Install Upgrayedd.app in the approved Applications folder.
+]]></description>
+            <enclosure url="https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.0/Upgrayedd-0.2.0-2.dmg" length="5800641" type="application/octet-stream" sparkle:edSignature="BXqwKCEbugTnW2sPV3WLb/QzVZqzlAMgocs0qxWTRyxjI8vA1v4q+hiXgmtujqGHYZvkiWdyCiVF9f6Fzd8GBg=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: 3gpzShwBBCJUOuDDXeE9zSZi5FlPmUXHGUCeJcoqyzvKwiUwjB9ZQOfKN7CSQOi7Y7poiD9kR5x0GR6IZ59CDg==
+length: 1511
+-->
