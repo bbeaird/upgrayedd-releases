@@ -1,8 +1,36 @@
-<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Upgrayedd</title>
+        <item>
+            <title>0.2.5</title>
+            <pubDate>Sat, 05 Sep 2026 16:47:36 -0500</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Upgrayedd 0.2.5 (7)
+
+Upgrayedd is now a native-only dashboard, with a clearer Overview and a separate Detailed Stats page.
+
+- See the recommendation, your current Mac, and three optional replacement configurations together, including specifications, prices, benefits, tradeoffs, and Apple links.
+- Explore active-use history, application activity, live readings, and the complete evidence scorecard in Detailed Stats.
+- Read charts with accurate time spacing, explicit gaps, and selectable history ranges. Expand the daily summary to see every observed day.
+- Keep one responsive desktop instance while the independently managed background collector continues recording.
+- Retire the localhost web dashboard; the updated collector no longer starts its web server.
+
+Existing telemetry, reports, and preferences remain on this Mac. Update checks send no Upgrayedd telemetry or hardware profile; the feed host receives ordinary HTTP metadata. Apple configuration links open only when selected. Prices are reference configurations, not guarantees of checkout pricing or measured performance gains.
+
+Requires macOS 14 or later. Universal binary for Apple silicon and Intel Macs.
+
+Existing installations: choose Upgrayedd > Check for Updates… and approve installation and relaunch. For a first installation, open the DMG and move Upgrayedd.app to /Applications.
+
+SHA-256: `87c64e5970de10d3438c38023f271a96c6f14b6e8548e3c9708cda098dcdcc0a`
+]]></description>
+            <enclosure url="https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.5/Upgrayedd-0.2.5-7.dmg" length="6341132" type="application/octet-stream" sparkle:edSignature="uDkk0ulGdZ8YXlEzaW8lNuCFLec0Bfj/F+lWIR2aiTGXJ3NyWqQ4GQRcfYiXsLcMzKfQHBixhi4R7SDTZr7VBA=="/>
+        </item>
         <item>
             <title>0.2.2</title>
             <pubDate>Thu, 03 Sep 2026 01:23:54 -0700</pubDate>
@@ -21,10 +49,11 @@ Requires macOS 14 or later. Universal binary for Apple silicon and Intel Macs.
 
 SHA-256: `56987be1d66c375f1605cd882732c3cf93ffecaff487da3fdbc2f8e8d69063c9`
 ]]></description>
-            <enclosure url="https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.2/Upgrayedd-0.2.2-4.dmg" length="5798589" type="application/octet-stream" sparkle:edSignature="TWibzpLw2AIlI8gmLK9pEISzs4vZqiEybsaoSIymDWQF6Mkz2pQGyW6sAufhxiFrEmj0C0rhg/5+wcIPgb4xAg=="></enclosure>
+            <enclosure url="https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.2/Upgrayedd-0.2.2-4.dmg" length="5798589" type="application/octet-stream" sparkle:edSignature="TWibzpLw2AIlI8gmLK9pEISzs4vZqiEybsaoSIymDWQF6Mkz2pQGyW6sAufhxiFrEmj0C0rhg/5+wcIPgb4xAg=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: KsCRH5HfF6lcP/ZpDOODCW/TEfpneFr3mGIIFFGdWPq0RrKaOW7331mxc5RbQBCgkkYDtscGEKpXgUAzWDgRBQ==
-length: 1949
+</rss>
+<!-- sparkle-signatures:
+edSignature: YIUdQIV8dprR//wG4QiP2eRQfnVti40bzgTbVODFZj/wfl0xczXVcpn+CsfgaofNSYOR1vBT2EXWgEf2fyeiDw==
+length: 4069
 -->
