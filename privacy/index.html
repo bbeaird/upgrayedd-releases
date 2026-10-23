@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Upgrayedd Privacy Policy</title>
+<style>
+:root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --link: #0a5bd3; --code: #f2f2f5; --rule: #e2e2e6; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161618; --fg: #ececf0; --muted: #a3a3ad; --link: #6ea8ff; --code: #26262a; --rule: #333338; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 40rem; margin: 0 auto; padding: 32px 16px 48px; }
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 28px 0 6px; padding-top: 20px; border-top: 1px solid var(--rule); }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 6px; }
+.meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 20px; }
+a { color: var(--link); overflow-wrap: anywhere; }
+code { background: var(--code); border-radius: 4px; padding: 1px 5px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+<h1>Upgrayedd Privacy Policy</h1>
+<p class="meta">Effective 2026-10-23 · Developer: Brantley Beaird</p>
+
+<h2>What stays on this Mac</h2>
+<p>Upgrayedd records performance data (CPU, memory, swap, disk space, thermal and power state, process names with their CPU and memory use, the frontmost app's bundle ID, whether you are active or idle, and your Mac's model and specs) in a local database in <code>~/Library/Application Support/Upgrayedd</code>. Reports and exports are saved beside it. None of this is sent anywhere. Encrypted backups go only to a folder you choose; if that folder syncs to a cloud service, that service uploads the encrypted files.</p>
+
+<h2>Usage analytics</h2>
+<p>On by default. Release builds send these events to Segment, which forwards them to Google Analytics:</p>
+<ul>
+<li><code>app_opened</code>: once per launch, and when you turn sharing back on</li>
+<li><code>screen_view</code>: when Overview or Detailed Stats appears</li>
+<li><code>explanation_opened</code>: when you tap “Why?”</li>
+</ul>
+<p>Each event carries <code>app</code>, <code>platform</code>, <code>app_version</code>, <code>environment</code>, <code>session_id</code> (the time the app started), <code>engagement_time_msec</code> (always 1), <code>screen_name</code> (<code>overview</code> or <code>details</code>, screen views only), a timestamp, a random message ID and a random identifier. The identifier is created at each launch, kept only in memory, and replaced when you turn sharing off or on. No performance data, app names or files are included.</p>
+<p>For analytics your Mac connects only to Segment, so Segment sees your IP address; each event's own IP field is set to <code>0.0.0.0</code>. Google Analytics receives the events from Segment. Nothing is sent before the first-run step has been shown, and events are never stored on disk or retried.</p>
+<p>To turn it off, clear “Shares anonymous usage stats” in the first-run step, or “Share anonymous usage stats” in Upgrayedd → Settings…. This stops future sends; it does not delete events already sent.</p>
+<p>Privacy policies: <a href="https://www.twilio.com/en-us/legal/privacy">Segment (Twilio)</a> · <a href="https://policies.google.com/privacy">Google</a></p>
+
+<h2>Other network connections</h2>
+<ul>
+<li><strong>Update checks</strong> (release builds): about once a day if you chose Check Daily, and whenever you choose Check for Updates…, Upgrayedd requests its signed update feed from GitHub. GitHub sees your IP address and the app version. No performance data or system profile is sent. An update downloads from GitHub only after you approve it.</li>
+<li><strong>Apple links</strong> (“Configure at Apple”, “This Mac's specs at Apple”) open apple.com in your browser only when you click them.</li>
+<li>Upgrayedd uses no AI, cloud or lookup services.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Open an issue at <a href="https://github.com/bbeaird/upgrayedd-releases/issues">https://github.com/bbeaird/upgrayedd-releases/issues</a>.</p>
+</main>
+</body>
+</html>
