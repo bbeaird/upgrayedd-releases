@@ -4,15 +4,15 @@ This repository contains signed macOS release artifacts and the Sparkle update f
 
 ## Current release
 
-- Version: 0.2.5 (build 7)
+- Version: 0.2.7 (build 9)
 - Requires: macOS 14 or later
 - Architectures: Apple silicon and Intel
-- Download: [Upgrayedd-0.2.5-7.dmg](https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.5/Upgrayedd-0.2.5-7.dmg)
-- SHA-256: `87c64e5970de10d3438c38023f271a96c6f14b6e8548e3c9708cda098dcdcc0a`
+- Download: [Upgrayedd-0.2.7-9.dmg](https://github.com/bbeaird/upgrayedd-releases/releases/download/v0.2.7/Upgrayedd-0.2.7-9.dmg)
+- SHA-256: `e9366c6509494949cb544daed77021d371787b2b338628f28d99f52807d4b3e3`
 
-Version 0.2.5 introduces the native Overview and Detailed Stats pages, a complete optional-upgrade comparison, and improved active-use history. It retires the localhost web dashboard and includes the prior collector, responsiveness, and single-instance fixes. Older immutable releases remain available for reference.
+Version 0.2.7 adds the Now tab with grouped activities and pressure-aware review suggestions. Dashboard refresh pauses when hidden; bounded queries reduce historical analysis overhead. Older immutable releases remain available for reference.
 
-To update an existing installation, choose **Upgrayedd > Check for Updates…**, then approve installation and relaunch. For a first installation, open the DMG and move Upgrayedd.app to `/Applications`.
+This is a **manual-download release**. Open the DMG and move Upgrayedd.app to `/Applications`, replacing the older app. Telemetry and preferences remain in your Library. The existing signed automatic-update feed is unchanged and does not offer 0.2.7.
 
 Upgrayedd processes its performance telemetry locally. When update checks are enabled, the signed update feed receives ordinary HTTPS request metadata but no Upgrayedd telemetry or hardware profile. Downloads, installation, and restarts always require user confirmation.
 
